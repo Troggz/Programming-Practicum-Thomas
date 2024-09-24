@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){     
 int limit = 5;
-cout<<"Input = 5"<<endl;
+cout<<"Input = "<<limit<<endl;
 
 	int increment = 1;
     int num = 0;
@@ -20,6 +20,7 @@ cout<<"Output = "<<num<<endl;
 
 int expectedresults = 15;
 
+cout<<"Expected Output = "<<expectedresults<<endl;
 if (expectedresults == num) {
     cout<<"test passed"<<endl;
   } else
