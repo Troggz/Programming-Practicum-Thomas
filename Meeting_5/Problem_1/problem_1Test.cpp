@@ -51,7 +51,7 @@ string joinVector(const vector<string>& vec) {
         if (i != 0) {
             resultString += " ";  // Add space between elements
         }
-        resultStringing += vec[i];
+        resultString += vec[i];
     }
     return resultString;
 }
