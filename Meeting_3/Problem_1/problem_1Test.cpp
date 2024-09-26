@@ -20,21 +20,21 @@ int main()
     if (discriminant > 0){                                    //Here we have a conditional depending on the value of the discriminant which would use different formulas
         x1 = (-b + sqrt(discriminant))/(2*a);            //these are the formula when the discrimant is more than 0
         x2 = (-b - sqrt(discriminant))/(2*a);
-        cout<<"there are two distince real roots = "<<x1<<" and "<<x2<<endl;
+        cout<<"Output          : "<<"there are two distince real roots = "<<x1<<" and "<<x2<<endl;
     }else if (discriminant < 0){
         x1 = (-b)/(2*a);                              //this is the formula if the discriminant is less than 0
-        cout<<"there is exactly one real root = "<<x1<<endl;
+        cout<<"Output          : "<<"there is exactly one real root = "<<x1<<endl;
     }else{
-        cout<<"There are no real roots";                      // this is what will be outputed if the discriminant is equal to 0
+        cout<<"Output          : "<< "There are no real roots";                      // this is what will be outputed if the discriminant is equal to 0
     }
 
 long ExpectedOutput = -2;
-
+cout<<"Expected Output : there is exactly one real root = -2"<<endl;
 if (ExpectedOutput == x1){
-    cout<<"Test Passed";
+    cout<<"Test Passed"<<endl;
     }
     else {
-    cout<<"Test Failed";
+    cout<<"Test Failed"<<endl;
     }
     return 0;               
 }
