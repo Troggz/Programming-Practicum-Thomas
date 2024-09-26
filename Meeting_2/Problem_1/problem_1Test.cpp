@@ -42,10 +42,10 @@ long insurance = 200000;
  cout<<"net salary   : Rp "<<format(net)<<endl;
 
 if(tax == 2000000 && net == 7600000){
-    cout<<"Test Successful!";
+    cout<<"Test Successful!"<<endl;
 }
     else{
-    cout<<"Test Failed!";
+    cout<<"Test Failed!"<<endl;
     }
 
 
