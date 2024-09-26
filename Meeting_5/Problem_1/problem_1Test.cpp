@@ -41,16 +41,45 @@ vector<string> fizzBuzz(int n){
 
     return result;
 }
-
-int main(){
-//We declare how many numbers we want in the list, inthis case 100
-    int n = 100 ;
-//we declare that 'result' will be the result of the function 'fizzbuzz' withthe argument 'n' being 100.
-    vector<string> result = fizzBuzz(n);
-//Then we make a for loop to output the list of numbers where in each iteration of 'result' vector s would take in the result 
-//(a number, fizz, buzz, or fizzbuzz)
-    for (string s : result) {
-        cout << s << " ";
+//This Function will be used to make the output of the previous function as 1 whole string including spaces so we can compare it with expected results
+//This function will take in a constant non changing vector with each elements being a string which is the output of 'result' in the previous function
+string joinVector(const vector<string>& vec) {
+    string resultString = "";
+//Then we make a for loop to add spaces between the elements in the previous function
+//This function will read each element of the vector by incrementing i which is based on the size of the vector
+    for (size_t i = 0; i < vec.size(); ++i) {
+        if (i != 0) {
+            resultString += " ";  // Add space between elements
+        }
+        resultStringing += vec[i];
     }
+    return resultString;
+}
+
+int main() {
+//declare the value of n which will be used in 'fizzbuzz' function
+    int n = 100;  
+
+ // we declare that the 'result' vector equals to the output of 'fizzbuzz' function with the arguemnt of n
+    vector<string> result = fizzBuzz(n);
+
+// we declare that 'resultString' string equals to the output of 'joinVector' Function with the argument of the result
+    string resultString = joinVector(result);
+
+//We define the expected output to be compared later on
+    string expectedOutput = "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz";
+
+    cout<<"Expected Result = "<<endl<<expectedOutput<<endl;
+
+//This if statement compares the 'resultString' with the 'expectedoutput'
+    if (resultString == expectedOutput) {
+//When they are both equal it will output "Test Passed"
+        cout << "Test Passed" << endl;
+    } else {
+//When they are not equal it will output "Test Failed" and also the result to compare what went wrong.
+        cout << "Test Failed." << endl;
+        cout << "Result: " << resultString << endl;
+    }
+
     return 0;
 }
