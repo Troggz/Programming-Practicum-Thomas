@@ -1,21 +1,20 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <vector>
+using namespace std;
+
+int main(){     
+int input, Num, Output;
+cout<<"Input = ";
+cin>>input;
+cout<<"Output = "<<endl;
 
 
-std::vector <std::string> Output(int input){
-    std::vector <std::string> Output;
 	for(int i=1;i<=10;i++)
 	{
-	std::cout<<input<<" x "<< i <<" = "<<(input*i)<<std::endl;
+	Num = input*i;
+	cout<<input<<" x "<< i <<" = "<<Num<<endl;
     }
-return Output;
-}
-
-int main(){
-std::vector <std::string> test = Output(4);
-
-
+cout<<Num;
 return 0;
 }
