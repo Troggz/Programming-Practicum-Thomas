@@ -22,14 +22,17 @@ int main() {
     }
 string expectedOutput = "5 4 3 2 1";
 
+cout<<"Output = "<<result<<endl;
 cout<<"Expected Output = "<<expectedOutput<<endl;
 
 if(expectedOutput == result){
+
     cout<<"Test Passed!"<<endl;
     }
  else{
+
     cout<<"Test Failed"<<endl;
-    cout<<"Output = "<<result;
+    
 }
 
     return 0;

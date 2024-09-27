@@ -17,7 +17,6 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> vec[i];
     }
-
 //This for loop is used to swap the position of the elements from the start and end, using the 'swap'  command 
     for (int i = 0; i < n / 2; ++i) {
 //this swap function makes it so that it swaps the position of an element in the vector with its correspondent using the formula below
