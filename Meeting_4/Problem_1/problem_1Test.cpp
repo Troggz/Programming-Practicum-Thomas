@@ -22,7 +22,9 @@ int expectedresults = 15;
 
 cout<<"Expected Output = "<<expectedresults<<endl;
 if (expectedresults == num) {
+    cout<<"Explanation = 1 + 2 + 3 + 4 + 5  =  15"<<endl;
     cout<<"test passed"<<endl;
+
   } else
     cout<<"test failed"<<endl;
 

@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){     
-int input, Num, Output;
+int input, Num;
 cout<<"Input = ";
 cin>>input;
 cout<<"Output = "<<endl;
@@ -15,6 +15,5 @@ cout<<"Output = "<<endl;
 	Num = input*i;
 	cout<<input<<" x "<< i <<" = "<<Num<<endl;
     }
-cout<<Num;
 return 0;
 }

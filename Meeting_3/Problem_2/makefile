@@ -18,10 +18,21 @@ problem_2Test: problem_2Test.o
 problem_2Test.o: problem_2Test.cpp
 	g++ -c problem_2Test.cpp -o problem_2Test.o
 
+	# Target to compile the object Test file
+problem_2Test_2: problem_2Test_2.o
+	g++ problem_2Test_2.o -o problem_2Test_2.exe
+
+# Target to compile the C++ Test program
+problem_2Test_2.o: problem_2Test_2.cpp
+	g++ -c problem_2Test_2.cpp -o problem_2Test_2.o
+
 # Target to run the Test program
 test: problem_2Test
 	./problem_2Test.exe
 
+test2: problem_2Test_2
+	./problem_2Test_2.exe
+
 # Target to clean up compiled files
 clean:
-	rm -f problem_2.o problem_2Test.o problem_2.exe problem_2Test.exe
+	rm -f problem_2.o problem_2Test.o problem_2.exe problem_2Test.exe problem_2Test_2.exe problem_2Test_2.o
