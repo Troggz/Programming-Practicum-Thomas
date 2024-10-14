@@ -11,7 +11,7 @@ int n = 3 ;
 
 Student theStudent[n];
 //TEST CASE
-theStudent[0].nim = 542313;
+int (theStudent[0].nim) = 542313;
 theStudent[0].UTS = 90;
 theStudent[0].UAS = 95;
 
