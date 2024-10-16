@@ -11,6 +11,13 @@ int n ;
 int main() {  
     cout<<"Enter the number of students : "; 
     cin>>n; 
+    cout<<endl;
+
+    while(n>50){
+    cout<<"The maximum number of students is 50"<<endl<<"Enter the number of students : ";
+    cin>>n;
+    }
+
     cout<<"Data mahasiswa"<<endl; 
 
 Student theStudent[n];
