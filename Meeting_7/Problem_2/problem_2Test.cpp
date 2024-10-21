@@ -10,9 +10,18 @@ double factor(int x){
 
 int main(){
 
-int x;
-cout<<"Input a number = ";
-cin>>x;
+int x = 5;
+cout<<"Input a number = "<< x <<endl;
+
 double result = factor(x);
 cout<<"The factorial of "<<x<<" = "<<result<<endl;
+
+double factCheck = 120;
+
+if (result == factCheck)
+    cout<<"*****Test Passed*****"<<endl;
+else
+    cout<<"*****Test Failed*****"<<endl;
+ 
+return 0;
 }
