@@ -33,7 +33,7 @@ else{
     cout<<"Test Failed"<<endl;
 }
 cout<<endl;
-cout<<"Addition"<<endl<<"----------------------------"<<endl;
+cout<<"Addition"<<endl<<"--------------------------------"<<endl;
 cout<<"a + b"<<endl;
 cout<<"a = "<<x<<endl;
 cout<<"b = "<<y<<endl;
@@ -45,9 +45,5 @@ if(addition(x,y) == addCheck){
 else{
     cout<<"Test Failed"<<endl;
 }
-
-
-
-
 
 }
