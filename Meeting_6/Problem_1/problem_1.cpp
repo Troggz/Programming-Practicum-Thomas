@@ -39,7 +39,5 @@ for (int i = 0; i < n ;i++){
     cout<<i + 1<<"."<<endl;
     cout<<"NIM = "<<theStudent[i].NIM<<endl;
     cout<<"Average score = "<<avg[i]<<endl;
-
 }
-
 }
