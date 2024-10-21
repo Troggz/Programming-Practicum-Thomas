@@ -4,34 +4,30 @@ double a, b, x, y;
 int t;
 double addition(double a, double b){
     double result = (a+b);
-    cout<<result<<endl;
     return result;
 }
 
 double substraction(double x, double y){
     double result = (x-y);
-    cout<<result<<endl;
     return result;
 }
 
 double decide (int t){
     if(t == 1){
-        cout<<"Substraction"<<endl<<"----------------------------"<<endl;
-        cout<<"a - b"<<endl;
+        cout<<"Substraction "<<"(a - b)"<<endl<<"----------------------------"<<endl;
         cout<<"a = ";
         cin>>a;
         cout<<"b = ";
-        cin>>b;
-        substraction(a,b);
+        cin>>b; cout<<endl;
+        cout<<a<<" - "<<b<<" = "<<substraction(a,b)<<endl;
     }
     else if(t == 2){
-        cout<<"Addition"<<endl<<"----------------------------"<<endl;
-        cout<<"a + b"<<endl;
+        cout<<"Addition "<<"(a + b)"<<endl<<"----------------------------"<<endl;
         cout<<"a = ";
         cin>>x;
         cout<<"b = ";
-        cin>>y;
-        addition(x,y);
+        cin>>y; cout<<endl;
+        cout<<x<<" + "<<y<<" = "<<addition(x,y)<<endl;
     }
     return 0;
 }
